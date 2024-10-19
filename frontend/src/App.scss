@@ -1,0 +1,71 @@
+@import "bootstrap/scss/bootstrap";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+}
+
+.hero {
+  background: linear-gradient(135deg, #0099ff, #66ffcc);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+
+  .hero-text {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-subtext {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .btn-primary {
+    background-color: #ff6600;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+  }
+}
+
+/* Dark Mode Styles */
+:root {
+  --primary-color: #0099ff;
+  --background-color: #ffffff;
+  --text-color: #333333;
+}
+
+.dark-mode {
+  --primary-color: #ff6600;
+  --background-color: #333333;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.dark-mode-toggle {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
